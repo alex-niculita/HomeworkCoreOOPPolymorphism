@@ -13,5 +13,11 @@ public class Car extends Vehicle implements MotorVehicle{
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
+
+    @Override
+    public void service() {
+        super.service();
+        checkEngine();
+    }
 }
 

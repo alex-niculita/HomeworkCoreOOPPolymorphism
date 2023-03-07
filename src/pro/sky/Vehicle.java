@@ -1,6 +1,6 @@
 package pro.sky;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Diagnosticable {
     private String modelName;
     private int wheelsCount;
 
@@ -31,5 +31,13 @@ public abstract class Vehicle {
 
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
+    }
+
+    @Override
+    public void service() {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();
+        }
     }
 }

@@ -1,5 +1,7 @@
 package pro.sky;
 
-public interface Trailer {
+public interface Trailer extends MotorVehicle {
+
     void checkTrailer();
+
 }
