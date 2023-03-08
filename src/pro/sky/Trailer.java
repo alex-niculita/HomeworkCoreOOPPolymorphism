@@ -1,7 +1,9 @@
 package pro.sky;
 
-public interface Trailer extends MotorVehicle {
+public interface Trailer {
 
-    void checkTrailer();
+    default void checkTrailer() {
+            System.out.println("Проверяем прицеп");
+    }
 
 }

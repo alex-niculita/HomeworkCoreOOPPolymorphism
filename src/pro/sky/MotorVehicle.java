@@ -1,6 +1,8 @@
 package pro.sky;
 
 public interface MotorVehicle {
-    void checkEngine();
+    default void checkEngine(){
+        System.out.println("Проверяем двигатель");
+    }
 
 }

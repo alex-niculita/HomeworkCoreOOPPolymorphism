@@ -4,11 +4,6 @@ public abstract class Vehicle implements Diagnosticable {
     private String modelName;
     private int wheelsCount;
 
-    public Vehicle(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
-
     public Vehicle(){
         this.modelName = "Unknown";
     }
